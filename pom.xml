@@ -13,7 +13,8 @@
 
     <!--子模块集合-->
     <modules>
-        <!--<module></module>-->
+        <module>spring-cloud-provider8080</module>
+        <module>spring-cloud-consumer8081</module>
     </modules>
 
     <groupId>com.ywstz.cloud</groupId>
