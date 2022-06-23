@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: spring-cloud-another-provider-service #应用名称
+  profiles:
+    active: dev #开发环境
+    #active: test #测试环境
+    #active: pro #生产环境
+
+server:
+  servlet:
+    context-path: /spring-cloud-another-provider #项目访问根路径
+
+#mybatis-plus配置
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.ywstz.cloud.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-value: 1 # 逻辑已删除值
+      logic-not-delete-value: 0 # 逻辑未删除值
+
+#eureka-client配置
+eureka:
+  instance:
+    instance-id: spring-cloud-another-provider8085-service
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 30    #eureka客户端像服务端发送心跳的时间间隔，默认30s
+    lease-expiration-duration-in-seconds: 90     #eureka服务端在收到最后一次心跳后等待时间上限，默认90s，超时将剔除服务
+  client:
+    register-with-eureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: http://eureka8082.com:8082/spring-cloud-eureka-server/eureka,http://eureka8083.com:8083/spring-cloud-eureka-server/eureka

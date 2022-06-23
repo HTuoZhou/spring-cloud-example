@@ -18,6 +18,9 @@
         <module>spring-cloud-consumer8081</module>
         <module>spring-cloud-eureka-server8082</module>
         <module>spring-cloud-eureka-server8083</module>
+        <module>spring-cloud-ribbon-consumer8084</module>
+        <module>spring-cloud-another-provider8085</module>
+        <module>spring-cloud-another-provider8086</module>
     </modules>
 
     <groupId>com.ywstz.cloud</groupId>

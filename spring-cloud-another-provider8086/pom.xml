@@ -10,10 +10,10 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>spring-cloud-consumer8081</artifactId>
+    <artifactId>spring-cloud-another-provider8086</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-cloud-consumer8081</name>
-    <description>spring-cloud-consumer8081</description>
+    <name>spring-cloud-another-provider8086</name>
+    <description>spring-cloud-another-provider8086</description>
 
     <!--统一管理依赖版本-->
     <properties>
