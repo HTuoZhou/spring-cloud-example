@@ -17,8 +17,8 @@ import org.springframework.cloud.netflix.ribbon.RibbonClients;
 @EnableDiscoveryClient
 // 局部生效，针对特定的ribbon客户端
 @RibbonClients({
-    @RibbonClient(name = "SPRING-CLOUD-PROVIDER-SERVICE",configuration = RibbonProviderConfig.class),
-    @RibbonClient(name = "SPRING-CLOUD-ANOTHER-PROVIDER-SERVICE",configuration = RibbonAnotherProviderConfig.class)
+        @RibbonClient(name = "SPRING-CLOUD-PROVIDER-SERVICE", configuration = RibbonProviderConfig.class),
+        @RibbonClient(name = "SPRING-CLOUD-ANOTHER-PROVIDER-SERVICE", configuration = RibbonAnotherProviderConfig.class)
 })
 public class SpringCloudRibbonConsumer8084Application {
 

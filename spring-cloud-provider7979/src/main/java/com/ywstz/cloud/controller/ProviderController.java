@@ -6,7 +6,10 @@ import com.ywstz.cloud.entity.Provider;
 import com.ywstz.cloud.service.IProviderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>
@@ -40,11 +43,11 @@ public class ProviderController {
         return "provider count init 100 " + "serverPort：" + serverPort;
     }
 
-    @PostMapping ("/reduce/{consumerId}")
+    @PostMapping("/reduce/{consumerId}")
     public String reduce(@PathVariable Long consumerId) {
         log.info("provider count reduce ");
         Provider provider = providerService.getOne(Wrappers.<Provider>lambdaQuery()
-                .eq(Provider::getConsumerId,consumerId));
+                .eq(Provider::getConsumerId, consumerId));
         provider.setCount(provider.getCount() - 1);
         providerService.updateById(provider);
         return "provider count reduce 1 " + "serverPort：" + serverPort;

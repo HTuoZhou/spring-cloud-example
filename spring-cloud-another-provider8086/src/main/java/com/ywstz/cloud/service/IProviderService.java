@@ -1,7 +1,7 @@
 package com.ywstz.cloud.service;
 
-import com.ywstz.cloud.entity.Provider;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.ywstz.cloud.entity.Provider;
 
 /**
  * <p>

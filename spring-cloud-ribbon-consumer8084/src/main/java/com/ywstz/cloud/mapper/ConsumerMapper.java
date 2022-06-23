@@ -1,7 +1,7 @@
 package com.ywstz.cloud.mapper;
 
-import com.ywstz.cloud.entity.Consumer;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.ywstz.cloud.entity.Consumer;
 
 /**
  * <p>

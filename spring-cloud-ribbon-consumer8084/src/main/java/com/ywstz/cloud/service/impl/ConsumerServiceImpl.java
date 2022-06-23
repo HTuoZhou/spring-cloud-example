@@ -1,9 +1,9 @@
 package com.ywstz.cloud.service.impl;
 
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.ywstz.cloud.entity.Consumer;
 import com.ywstz.cloud.mapper.ConsumerMapper;
 import com.ywstz.cloud.service.IConsumerService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 /**

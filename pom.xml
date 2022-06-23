@@ -21,6 +21,7 @@
         <module>spring-cloud-ribbon-consumer8084</module>
         <module>spring-cloud-another-provider8085</module>
         <module>spring-cloud-another-provider8086</module>
+        <module>spring-cloud-loadbalancer-consumer8087</module>
     </modules>
 
     <groupId>com.ywstz.cloud</groupId>
