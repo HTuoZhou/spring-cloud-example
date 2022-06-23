@@ -1,6 +1,6 @@
 spring:
   application:
-    name: spring-cloud-consumer-service #应用名称
+    name: spring-cloud-provider-service #应用名称
   profiles:
     active: dev #开发环境
     #active: test #测试环境
@@ -8,7 +8,7 @@ spring:
 
 server:
   servlet:
-    context-path: /spring-cloud-consumer #项目访问根路径
+    context-path: /spring-cloud-provider #项目访问根路径
 
 #mybatis-plus配置
 mybatis-plus:
@@ -24,9 +24,9 @@ mybatis-plus:
 #eureka-client配置
 eureka:
   instance:
-    instance-id: spring-cloud-consumer-service
+    instance-id: spring-cloud-provider7979-service
     prefer-ip-address: true
-    lease-renewal-interval-in-seconds: 30     #eureka客户端像服务端发送心跳的时间间隔，默认30s
+    lease-renewal-interval-in-seconds: 30    #eureka客户端像服务端发送心跳的时间间隔，默认30s
     lease-expiration-duration-in-seconds: 90     #eureka服务端在收到最后一次心跳后等待时间上限，默认90s，超时将剔除服务
   client:
     register-with-eureka: true

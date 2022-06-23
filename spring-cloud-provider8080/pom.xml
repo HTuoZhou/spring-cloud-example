@@ -72,6 +72,13 @@
             <artifactId>flyway-core</artifactId>
         </dependency>
         <!--flyway依赖结束-->
+
+        <!--eureka-client依赖开始-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <!--eureka-client依赖结束-->
     </dependencies>
 
     <build>

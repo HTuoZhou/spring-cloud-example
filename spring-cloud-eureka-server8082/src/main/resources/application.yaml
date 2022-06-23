@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: spring-cloud-eureka-server-service #应用名称
+  profiles:
+    active: dev #开发环境
+    #active: test #测试环境
+    #active: pro #生产环境
+
+server:
+  servlet:
+    context-path: /spring-cloud-eureka-server #项目访问根路径
+
+#eureka-server配置
+eureka:
+  instance:
+    hostname: eureka8082.com  #eureka服务端的实例名字
+  server:
+    enable-self-preservation: true #禁用自我保护（一般生产环境中不会禁止自我保护），默认开启
+    eviction-interval-timer-in-ms: 60000 #每隔多久触发一次服务剔除（单位ms毫秒），默认60000ms
+  client:
+    register-with-eureka: false    #表识不向注册中心注册自己
+    fetch-registry: false   #表示自己就是注册中心，职责是维护服务实例，并不需要去检索服务
+    service-url:
+      defaultZone: http://eureka8083.com:8083/spring-cloud-eureka-server/eureka/   #设置与eureka-server交互的地址查询服务和注册服务都需要依赖这个地址
