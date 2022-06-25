@@ -41,13 +41,13 @@ feign:
       SPRING-CLOUD-PROVIDER-SERVICE:
         loggerLevel: FULL #openfeign日志配置
         #        contract: feign.Contract.Default.Default #契约配置，支持原生的注解
-        connectTimeout: 10000 #连接超时时间 默认10s
-        readTimeout: 60000 #请求处理超时时间 默认60s
+        connectTimeout: 3000 #连接超时时间 默认10s
+        readTimeout: 3000 #请求处理超时时间 默认60s
       SPRING-CLOUD-ANOTHER-PROVIDER-SERVICE:
         loggerLevel: BASIC #openfeign日志配置
         #        contract: feign.Contract.Default.Default #契约配置，支持原生的注解
-        connectTimeout: 10000 #连接超时时间 默认10s
-        readTimeout: 10000 #请求处理超时时间 默认60s
+        connectTimeout: 5000 #连接超时时间 默认10s
+        readTimeout: 5000 #请求处理超时时间 默认60s
 
 #openfeign debug日志配置
 logging:

@@ -1,6 +1,7 @@
 package com.ywstz.cloud.openfeignclient;
 
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -13,6 +14,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 public interface IProviderOpenfeignService {
 
     @PostMapping("/provider/openfeign/add/{consumerId}")
-    public String add(@PathVariable Long consumerId);
+    public String openfeignAdd(@PathVariable Long consumerId);
+
+    @GetMapping("/provider/openfeign/timeout/{time}")
+    public String openfeignTimeout(@PathVariable Long time);
 
 }

@@ -4,9 +4,7 @@ package com.ywstz.cloud.controller;
 import com.ywstz.cloud.entity.Consumer;
 import com.ywstz.cloud.service.IConsumerService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 /**
@@ -56,5 +54,25 @@ public class ConsumerController {
         String s = restTemplate.postForObject(ANOTHER_PROVIDER_BASE_URL + "/anotherProvider/loadbalancer/add/" + consumer.getId(), null, String.class);
 
         return "loadbalancerConsumer init count 100" + "------>" + s;
+    }
+
+    @GetMapping("/timeout/{time}")
+    public String timeout(@PathVariable Long time) {
+        log.info("loadbalancerConsumer timeout " + time + "s");
+
+        // provider timeout
+        String s = restTemplate.getForObject(PROVIDER_BASE_URL + "/provider/loadbalancer/timeout/" + time, String.class);
+
+        return "loadbalancerConsumer timeout " + time + "s" + "------>" + s;
+    }
+
+    @GetMapping("/another/timeout/{time}")
+    public String anotherTimeout(@PathVariable Long time) {
+        log.info("loadbalancerConsumer timeout " + time + "s");
+
+        // provider timeout
+        String s = restTemplate.getForObject(ANOTHER_PROVIDER_BASE_URL + "/anotherProvider/loadbalancer/timeout/" + time, String.class);
+
+        return "loadbalancerConsumer timeout " + time + "s" + "------>" + s;
     }
 }

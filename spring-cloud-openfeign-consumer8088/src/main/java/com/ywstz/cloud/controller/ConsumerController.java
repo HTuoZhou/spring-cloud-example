@@ -6,9 +6,7 @@ import com.ywstz.cloud.openfeignclient.IAnotherProviderOpenfeignService;
 import com.ywstz.cloud.openfeignclient.IProviderOpenfeignService;
 import com.ywstz.cloud.service.IConsumerService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * <p>
@@ -40,7 +38,7 @@ public class ConsumerController {
         consumerService.save(consumer);
 
         // provider add
-        String s = providerOpenfeignService.add(consumer.getId());
+        String s = providerOpenfeignService.openfeignAdd(consumer.getId());
 
         return "openfeignConsumer init count 100" + "------>" + s;
     }
@@ -53,9 +51,29 @@ public class ConsumerController {
         consumerService.save(consumer);
 
         //another provider add
-        String s = anotherProviderOpenfeignService.add(consumer.getId());
+        String s = anotherProviderOpenfeignService.openfeignAdd(consumer.getId());
 
         return "openfeignConsumer init count 100" + "------>" + s;
+    }
+
+    @GetMapping("/timeout/{time}")
+    public String timeout(@PathVariable Long time) {
+        log.info("openfeignConsumer timeout " + time + "s");
+
+        // provider timeout
+        String s = providerOpenfeignService.openfeignTimeout(time);
+
+        return "openfeignConsumer timeout " + time + "s" + "------>" + s;
+    }
+
+    @GetMapping("/another/timeout/{time}")
+    public String anotherTimeout(@PathVariable Long time) {
+        log.info("openfeignConsumer timeout " + time + "s");
+
+        // another provider timeout
+        String s = anotherProviderOpenfeignService.openfeignTimeout(time);
+
+        return "openfeignConsumer timeout " + time + "s" + "------>" + s;
     }
 
 }

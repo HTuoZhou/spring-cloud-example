@@ -5,9 +5,7 @@ import com.ywstz.cloud.entity.Consumer;
 import com.ywstz.cloud.service.IConsumerService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 /**
@@ -47,5 +45,15 @@ public class ConsumerController {
         String s = restTemplate.postForObject(PROVIDER_BASE_URL + "/provider/add/" + consumer.getId(), null, String.class);
 
         return "consumer init count 100" + "------>" + s;
+    }
+
+    @GetMapping("/timeout/{time}")
+    public String timeout(@PathVariable Long time) {
+        log.info("consumer timeout " + time + "s");
+
+        // provider timeout
+        String s = restTemplate.getForObject(PROVIDER_BASE_URL + "/provider/timeout/" + time, String.class);
+
+        return "consumer timeout " + time + "s" + "------>" + s;
     }
 }

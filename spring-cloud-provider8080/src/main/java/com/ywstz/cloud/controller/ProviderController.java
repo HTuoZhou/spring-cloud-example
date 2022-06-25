@@ -3,12 +3,10 @@ package com.ywstz.cloud.controller;
 
 import com.ywstz.cloud.entity.Provider;
 import com.ywstz.cloud.service.IProviderService;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * <p>
@@ -32,6 +30,7 @@ public class ProviderController {
         this.providerService = providerService;
     }
 
+    //-------------------------------------add-------------------------------------
     @PostMapping("/add/{consumerId}")
     public String add(@PathVariable Long consumerId) {
         log.info("provider add init count 100");
@@ -70,5 +69,39 @@ public class ProviderController {
         provider.setCount(100);
         providerService.save(provider);
         return "provider openfeignAdd init count 100 " + "serverPort：" + serverPort;
+    }
+
+
+    //-------------------------------------timeout-------------------------------------
+    @SneakyThrows(Exception.class)
+    @GetMapping("/timeout/{time}")
+    public String timeout(@PathVariable Long time) {
+        log.info("provider timeout " + time + "s");
+        Thread.sleep(time * 1000);
+        return "provider timeout " + time + "s " + "serverPort：" + serverPort;
+    }
+
+    @SneakyThrows(Exception.class)
+    @GetMapping("/ribbon/timeout/{time}")
+    public String ribbonTimeout(@PathVariable Long time) {
+        log.info("provider ribbonTimeout " + time + "s");
+        Thread.sleep(time * 1000);
+        return "provider ribbonTimeout " + time + "s " + "serverPort：" + serverPort;
+    }
+
+    @SneakyThrows(Exception.class)
+    @GetMapping("/loadbalancer/timeout/{time}")
+    public String loadbalancerTimeout(@PathVariable Long time) {
+        log.info("provider loadbalancerTimeout " + time + "s");
+        Thread.sleep(time * 1000);
+        return "provider loadbalancerTimeout " + time + "s " + "serverPort：" + serverPort;
+    }
+
+    @SneakyThrows(Exception.class)
+    @GetMapping("/openfeign/timeout/{time}")
+    public String openfeignTimeout(@PathVariable Long time) {
+        log.info("provider openfeignTimeout " + time + "s");
+        Thread.sleep(time * 1000);
+        return "provider openfeignTimeout " + time + "s " + "serverPort：" + serverPort;
     }
 }
