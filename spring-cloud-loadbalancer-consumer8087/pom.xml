@@ -66,13 +66,6 @@
         </dependency>
         <!--mybatis-plus依赖结束-->
 
-        <!--flyway依赖开始-->
-        <dependency>
-            <groupId>org.flywaydb</groupId>
-            <artifactId>flyway-core</artifactId>
-        </dependency>
-        <!--flyway依赖结束-->
-
         <!--eureka-client依赖开始-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

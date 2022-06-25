@@ -1,6 +1,6 @@
 SET NAMES utf8mb4;
 SET
-FOREIGN_KEY_CHECKS = 0;
+    FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
 -- Table structure for provider
@@ -47,4 +47,4 @@ CREATE TABLE `consumer`
 -- ----------------------------
 
 SET
-FOREIGN_KEY_CHECKS = 1;
+    FOREIGN_KEY_CHECKS = 1;

@@ -1,7 +1,6 @@
 package com.ywstz.cloud.controller;
 
 
-import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.ywstz.cloud.entity.Provider;
 import com.ywstz.cloud.service.IProviderService;
 import lombok.extern.slf4j.Slf4j;
@@ -35,22 +34,41 @@ public class ProviderController {
 
     @PostMapping("/add/{consumerId}")
     public String add(@PathVariable Long consumerId) {
-        log.info("provider count init 100");
+        log.info("provider add init count 100");
         Provider provider = new Provider();
         provider.setConsumerId(consumerId);
         provider.setCount(100);
         providerService.save(provider);
-        return "provider count init 100 " + "serverPort：" + serverPort;
+        return "provider add init count 100 " + "serverPort：" + serverPort;
     }
 
-    @PostMapping("/reduce/{consumerId}")
-    public String reduce(@PathVariable Long consumerId) {
-        log.info("provider count reduce ");
-        Provider provider = providerService.getOne(Wrappers.<Provider>lambdaQuery()
-                .eq(Provider::getConsumerId, consumerId));
-        provider.setCount(provider.getCount() - 1);
-        providerService.updateById(provider);
-        return "provider count reduce 1 " + "serverPort：" + serverPort;
+    @PostMapping("/ribbon/add/{consumerId}")
+    public String ribbonAdd(@PathVariable Long consumerId) {
+        log.info("provider ribbonAdd init count 100");
+        Provider provider = new Provider();
+        provider.setConsumerId(consumerId);
+        provider.setCount(100);
+        providerService.save(provider);
+        return "provider ribbonAdd init count 100 " + "serverPort：" + serverPort;
     }
 
+    @PostMapping("/loadbalancer/add/{consumerId}")
+    public String loadbalancerAdd(@PathVariable Long consumerId) {
+        log.info("provider loadbalancerAdd init count 100");
+        Provider provider = new Provider();
+        provider.setConsumerId(consumerId);
+        provider.setCount(100);
+        providerService.save(provider);
+        return "provider loadbalancerAdd init count 100 " + "serverPort：" + serverPort;
+    }
+
+    @PostMapping("/openfeign/add/{consumerId}")
+    public String openfeignAdd(@PathVariable Long consumerId) {
+        log.info("provider openfeignAdd init count 100");
+        Provider provider = new Provider();
+        provider.setConsumerId(consumerId);
+        provider.setCount(100);
+        providerService.save(provider);
+        return "provider openfeignAdd init count 100 " + "serverPort：" + serverPort;
+    }
 }

@@ -1,0 +1,55 @@
+spring:
+  application:
+    name: spring-cloud-openfeign-consumer-service #应用名称
+  profiles:
+    active: dev #开发环境
+    #active: test #测试环境
+    #active: pro #生产环境
+
+server:
+  servlet:
+    context-path: /spring-cloud-openfeign-consumer #项目访问根路径
+
+#mybatis-plus配置
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.ywstz.cloud.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-value: 1 # 逻辑已删除值
+      logic-not-delete-value: 0 # 逻辑未删除值
+
+#eureka-client配置
+eureka:
+  instance:
+    instance-id: spring-cloud-openfeign-consumer-service
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 30     #eureka客户端像服务端发送心跳的时间间隔，默认30s
+    lease-expiration-duration-in-seconds: 90     #eureka服务端在收到最后一次心跳后等待时间上限，默认90s，超时将剔除服务
+  client:
+    register-with-eureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: http://eureka8082.com:8082/spring-cloud-eureka-server/eureka,http://eureka8083.com:8083/spring-cloud-eureka-server/eureka
+
+#局部生效，针对特定的openfeign客户端
+feign:
+  client:
+    config:
+      SPRING-CLOUD-PROVIDER-SERVICE:
+        loggerLevel: FULL #openfeign日志配置
+        #        contract: feign.Contract.Default.Default #契约配置，支持原生的注解
+        connectTimeout: 10000 #连接超时时间 默认10s
+        readTimeout: 60000 #请求处理超时时间 默认60s
+      SPRING-CLOUD-ANOTHER-PROVIDER-SERVICE:
+        loggerLevel: BASIC #openfeign日志配置
+        #        contract: feign.Contract.Default.Default #契约配置，支持原生的注解
+        connectTimeout: 10000 #连接超时时间 默认10s
+        readTimeout: 10000 #请求处理超时时间 默认60s
+
+#openfeign debug日志配置
+logging:
+  level:
+    com.ywstz.cloud.openfeignclient: debug

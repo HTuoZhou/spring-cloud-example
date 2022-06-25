@@ -10,10 +10,10 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>spring-cloud-another-provider8086</artifactId>
+    <artifactId>spring-cloud-openfeign-consumer8088</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-cloud-another-provider8086</name>
-    <description>spring-cloud-another-provider8086</description>
+    <name>spring-cloud-openfeign-consumer8088</name>
+    <description>spring-cloud-openfeign-consumer8088</description>
 
     <!--统一管理依赖版本-->
     <properties>
@@ -72,6 +72,13 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
         <!--eureka-client依赖结束-->
+
+        <!--openfeign依赖开始-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <!--openfeign依赖结束-->
     </dependencies>
 
     <build>
