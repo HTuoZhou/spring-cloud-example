@@ -34,6 +34,16 @@ eureka:
     service-url:
       defaultZone: http://eureka8082.com:8082/spring-cloud-eureka-server/eureka,http://eureka8083.com:8083/spring-cloud-eureka-server/eureka
 
+#局部生效，当openfeign也配置对应属性时，将会被openfeign覆盖
+SPRING-CLOUD-PROVIDER-SERVICE:
+  ribbon:
+    ReadTimeout: 2000 #连接超时时间 默认1s
+    ConnectTimeout: 2000 #连接超时时间 默认1s
+SPRING-CLOUD-ANOTHER-PROVIDER-SERVICE:
+  ribbon:
+    ReadTimeout: 2000 #连接超时时间 默认1s
+    ConnectTimeout: 2000 #连接超时时间 默认1s
+
 #局部生效，针对特定的openfeign客户端
 feign:
   client:
@@ -41,13 +51,13 @@ feign:
       SPRING-CLOUD-PROVIDER-SERVICE:
         loggerLevel: FULL #openfeign日志配置
         #        contract: feign.Contract.Default.Default #契约配置，支持原生的注解
-        connectTimeout: 3000 #连接超时时间 默认10s
-        readTimeout: 3000 #请求处理超时时间 默认60s
+        connectTimeout: 3000 #连接超时时间 默认为ribbon连接超时时间
+        readTimeout: 3000 #请求处理超时时间 默认为ribbon连接超时时间
       SPRING-CLOUD-ANOTHER-PROVIDER-SERVICE:
         loggerLevel: BASIC #openfeign日志配置
         #        contract: feign.Contract.Default.Default #契约配置，支持原生的注解
-        connectTimeout: 5000 #连接超时时间 默认10s
-        readTimeout: 5000 #请求处理超时时间 默认60s
+        connectTimeout: 5000 #连接超时时间 默认为ribbon连接超时时间
+        readTimeout: 5000 #请求处理超时时间 默认为ribbon连接超时时间
 
 #openfeign debug日志配置
 logging:

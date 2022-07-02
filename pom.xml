@@ -23,6 +23,9 @@
         <module>spring-cloud-another-provider8086</module>
         <module>spring-cloud-loadbalancer-consumer8087</module>
         <module>spring-cloud-openfeign-consumer8088</module>
+        <module>spring-cloud-hystrix-provider8089</module>
+        <module>spring-cloud-hystrix-consumer8090</module>
+        <module>spring-cloud-hystrix-dashboard8091</module>
     </modules>
 
     <groupId>com.ywstz.cloud</groupId>

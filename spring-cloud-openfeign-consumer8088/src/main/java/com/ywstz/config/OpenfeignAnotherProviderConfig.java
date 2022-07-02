@@ -35,7 +35,7 @@
 //      */
 //     @Bean
 //     public Request.Options options() {
-//         return new Request.Options(3, TimeUnit.SECONDS,5,TimeUnit.SECONDS,false);
+//         return new Request.Options(5, TimeUnit.SECONDS,5,TimeUnit.SECONDS,false);
 //     }
 //
 // }
