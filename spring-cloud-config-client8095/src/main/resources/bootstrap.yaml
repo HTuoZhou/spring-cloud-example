@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config: #config-client配置
+      label: master
+      name: spring-cloud-config-server-service
+      profile: dev
+      uri: http://localhost:8093/spring-cloud-config-server

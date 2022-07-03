@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: spring-cloud-config-client-service #应用名称
+  profiles:
+    active: dev #开发环境
+    #active: test #测试环境
+    #active: pro #生产环境
+  rabbitmq: #rabbitmq配置
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+server:
+  servlet:
+    context-path: /spring-cloud-config-client #项目访问根路径
+
+#eureka-client配置
+eureka:
+  instance:
+    instance-id: spring-cloud-config-client8095-service
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 30     #eureka客户端像服务端发送心跳的时间间隔，默认30s
+    lease-expiration-duration-in-seconds: 90     #eureka服务端在收到最后一次心跳后等待时间上限，默认90s，超时将剔除服务
+  client:
+    register-with-eureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: http://eureka8082.com:8082/spring-cloud-eureka-server/eureka,http://eureka8083.com:8083/spring-cloud-eureka-server/eureka
+
+#暴露bus-refresh端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

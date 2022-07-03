@@ -10,10 +10,10 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>spring-cloud-gateway8092</artifactId>
+    <artifactId>spring-cloud-config-client8094</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-cloud-gateway8092</name>
-    <description>spring-cloud-gateway8092</description>
+    <name>spring-cloud-config-client8094</name>
+    <description>spring-cloud-config-client8094</description>
 
     <!--统一管理依赖版本-->
     <properties>
@@ -24,6 +24,21 @@
     </properties>
 
     <dependencies>
+        <!--web依赖开始-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+        </dependency>
+        <!--web依赖结束-->
+
         <!--eureka-client依赖开始-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -31,12 +46,19 @@
         </dependency>
         <!--eureka-client依赖结束-->
 
-        <!--gateway依赖开始-->
+        <!--config-client依赖开始-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-gateway</artifactId>
+            <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
-        <!--gateway依赖结束-->
+        <!--config-client依赖结束-->
+
+        <!--bus-amqp依赖开始-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
+        <!--bus-amqp依赖结束-->
     </dependencies>
 
     <build>

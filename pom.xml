@@ -27,6 +27,9 @@
         <module>spring-cloud-hystrix-consumer8090</module>
         <module>spring-cloud-hystrix-dashboard8091</module>
         <module>spring-cloud-gateway8092</module>
+        <module>spring-cloud-config-server8093</module>
+        <module>spring-cloud-config-client8094</module>
+        <module>spring-cloud-config-client8095</module>
     </modules>
 
     <groupId>com.ywstz.cloud</groupId>
