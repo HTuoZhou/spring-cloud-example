@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: spring-cloud-gateway-service #应用名称
+  profiles:
+    active: dev #开发环境
+    #active: test #测试环境
+    #active: pro #生产环境
+  cloud:
+    gateway: #gateway配置
+      routes:
+        - id: SPRING-CLOUD-PROVIDER-SERVICE #路由唯一标识，最好保持和服务名一样
+          uri: lb://SPRING-CLOUD-PROVIDER-SERVICE #路由转发目的地
+          #断言规则 用于路由规则的匹配
+          predicates:
+            - Path=/spring-cloud-gateway/spring-cloud-provider/**
+          filters:
+            - StripPrefix=1
+        - id: SPRING-CLOUD-ANOTHER-PROVIDER-SERVICE #路由唯一标识，最好保持和服务名一样
+          uri: lb://SPRING-CLOUD-ANOTHER-PROVIDER-SERVICE #路由转发目的地
+          #断言规则 用于路由规则的匹配
+          predicates:
+            - Path=/spring-cloud-gateway/spring-cloud-another-provider/**
+          filters:
+            - StripPrefix=1
+server:
+  servlet:
+    context-path: /spring-cloud-gateway #项目访问根路径
+
+#eureka-client配置
+eureka:
+  instance:
+    instance-id: spring-cloud-gateway8092-service
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 30     #eureka客户端像服务端发送心跳的时间间隔，默认30s
+    lease-expiration-duration-in-seconds: 90     #eureka服务端在收到最后一次心跳后等待时间上限，默认90s，超时将剔除服务
+  client:
+    register-with-eureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: http://eureka8082.com:8082/spring-cloud-eureka-server/eureka,http://eureka8083.com:8083/spring-cloud-eureka-server/eureka
