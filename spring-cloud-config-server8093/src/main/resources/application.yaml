@@ -2,16 +2,18 @@ spring:
   application:
     name: spring-cloud-config-server-service #应用名称
   profiles:
-    active: dev #开发环境
+    active: native,dev #开发环境
     #active: test #测试环境
     #active: pro #生产环境
   cloud:
     config: #config-server配置
       server:
-        git:
-          uri: https://github.com/ywstz/spring-cloud-config-server-file.git #git仓库地址
-          search-paths:
-            - spring-cloud-config-server-file
+        #        git: #git配置
+        #          uri: https://github.com/ywstz/spring-cloud-config-server-file.git #git仓库地址
+        #          search-paths:
+        #            - spring-cloud-config-server-file
+        native: #本地配置
+          search-locations: file:D:/JavaWorkSpace/spring-cloud-example/spring-cloud-config-server-file/
   rabbitmq: #rabbitmq配置
     host: localhost
     port: 5672
