@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: spring-cloud-stream-provider-service #应用名称
+  profiles:
+    active: dev #开发环境
+    #active: test #测试环境
+    #active: pro #生产环境
+  cloud:
+    stream:
+      binders: #在此处配置要绑定的rabbitmq的服务信息
+        myRabbit: #自定义消息服务的名称，用于binding整合
+          type: rabbit #消息组件类型
+          environment: #设置rabbitmq的相关环境配置
+            spring:
+              rabbitmq:
+                host: localhost
+                port: 5672
+                username: guest
+                password: guest
+      bindings: #服务的整合处理
+        output: #自定义通道的名称
+          destination: myExchange #自定义交换机的名称
+          content-type: application/json #消息类型
+          binder: myRabbit #需要绑定的消息服务名称
+
+server:
+  servlet:
+    context-path: /spring-cloud-stream-provider #项目访问根路径
+
+#eureka-client配置
+eureka:
+  instance:
+    instance-id: spring-cloud-stream-provider8096-service
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 30     #eureka客户端像服务端发送心跳的时间间隔，默认30s
+    lease-expiration-duration-in-seconds: 90     #eureka服务端在收到最后一次心跳后等待时间上限，默认90s，超时将剔除服务
+  client:
+    register-with-eureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: http://eureka8082.com:8082/spring-cloud-eureka-server/eureka,http://eureka8083.com:8083/spring-cloud-eureka-server/eureka

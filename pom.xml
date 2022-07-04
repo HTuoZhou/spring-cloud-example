@@ -30,6 +30,9 @@
         <module>spring-cloud-config-server8093</module>
         <module>spring-cloud-config-client8094</module>
         <module>spring-cloud-config-client8095</module>
+        <module>spring-cloud-stream-provider8096</module>
+        <module>spring-cloud-stream-consumer8097</module>
+        <module>spring-cloud-stream-consumer8098</module>
     </modules>
 
     <groupId>com.ywstz.cloud</groupId>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--spring-cloud-example父级依赖-->
+    <parent>
+        <groupId>com.ywstz.cloud</groupId>
+        <artifactId>spring-cloud-example</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>spring-cloud-stream-provider8096</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>spring-cloud-stream-provider8096</name>
+    <description>spring-cloud-stream-provider8096</description>
+
+    <!--统一管理依赖版本-->
+    <properties>
+        <java.version>1.8</java.version>
+
+        <mybatis.plus.boot.starter.version>3.5.1</mybatis.plus.boot.starter.version>
+        <mybatis.plus.generator.version>3.5.1</mybatis.plus.generator.version>
+    </properties>
+
+    <dependencies>
+        <!--web依赖开始-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+        </dependency>
+        <!--web依赖结束-->
+
+        <!--eureka-client依赖开始-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <!--eureka-client依赖结束-->
+
+        <!--stream-rabbit依赖开始-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
+        </dependency>
+        <!--stream-rabbit依赖结束-->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
