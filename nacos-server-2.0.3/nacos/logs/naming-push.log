@@ -1,0 +1,254 @@
+2022-07-05 15:31:00,051 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=1}
+
+2022-07-05 15:31:00,766 INFO [PUSH-SUCC] 234ms, all delay time 785ms, SLA 715ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=1}, DataSize=1, target=192.168.64.1
+
+2022-07-05 15:36:59,431 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=2}
+
+2022-07-05 15:36:59,920 INFO [PUSH-SUCC] 14ms, all delay time 552ms, SLA 489ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=2}, DataSize=2, target=192.168.64.1
+
+2022-07-05 15:36:59,932 INFO [PUSH-SUCC] 25ms, all delay time 564ms, SLA 501ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=2}, DataSize=2, target=192.168.64.1
+
+2022-07-05 15:37:45,323 INFO [PUSH-SUCC] 8ms, all delay time 607ms, SLA 607ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=1}, DataSize=1, target=192.168.64.1
+
+2022-07-05 15:37:45,328 INFO [PUSH-SUCC] 13ms, all delay time 613ms, SLA 613ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=1}, DataSize=1, target=192.168.64.1
+
+2022-07-05 15:37:59,118 INFO [PUSH-SUCC] 11ms, all delay time 552ms, SLA 552ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=1}, DataSize=2, target=192.168.64.1
+
+2022-07-05 15:37:59,118 INFO [PUSH-SUCC] 13ms, all delay time 552ms, SLA 552ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=1}, DataSize=2, target=192.168.64.1
+
+2022-07-05 15:49:16,692 INFO [PUSH-SUCC] 19ms, all delay time 566ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=0}, DataSize=0
+
+2022-07-05 15:49:17,993 INFO [PUSH-SUCC] 9ms, all delay time 611ms, SLA 611ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=1}, DataSize=1, target=192.168.64.1
+
+2022-07-05 15:52:51,220 INFO [PUSH-SUCC] 5ms, all delay time 595ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='SPRING-CLOUD-ALIBABA-NACOS-PROVIDER-SERVICE', ephemeral=true, revision=0}, DataSize=0
+
+2022-07-05 15:54:20,586 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=4}
+
+2022-07-05 15:55:16,281 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=5}
+
+2022-07-05 15:55:16,795 INFO [PUSH-SUCC] 31ms, all delay time 611ms, SLA 514ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=5}, DataSize=1, target=192.168.64.1
+
+2022-07-05 15:55:25,498 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=6}
+
+2022-07-05 15:55:25,965 INFO [PUSH-SUCC] 6ms, all delay time 524ms, SLA 467ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=6}, DataSize=2, target=192.168.64.1
+
+2022-07-05 15:55:25,979 INFO [PUSH-SUCC] 25ms, all delay time 538ms, SLA 481ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=6}, DataSize=2, target=192.168.64.1
+
+2022-07-05 15:55:29,908 INFO [PUSH-SUCC] 23ms, all delay time 576ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=2}, DataSize=0
+
+2022-07-05 15:55:31,207 INFO [PUSH-SUCC] 15ms, all delay time 609ms, SLA 609ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=3}, DataSize=1, target=192.168.64.1
+
+2022-07-05 15:55:37,633 INFO [PUSH-SUCC] 5ms, all delay time 568ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='SPRING-CLOUD-ALIBABA-NACOS-PROVIDER-SERVICE', ephemeral=true, revision=0}, DataSize=0
+
+2022-07-05 15:58:29,078 INFO [PUSH-SUCC] 31ms, all delay time 609ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=4}, DataSize=0
+
+2022-07-05 15:58:30,348 INFO [PUSH-SUCC] 8ms, all delay time 612ms, SLA 612ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=5}, DataSize=1, target=192.168.64.1
+
+2022-07-05 15:58:40,663 INFO [PUSH-SUCC] 10ms, all delay time 510ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=6}, DataSize=2
+
+2022-07-05 16:01:19,476 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=8}
+
+2022-07-05 16:02:59,348 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=9}
+
+2022-07-05 16:02:59,898 INFO [PUSH-SUCC] 25ms, all delay time 617ms, SLA 550ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=9}, DataSize=1, target=192.168.64.1
+
+2022-07-05 16:03:11,111 INFO [PUSH-SUCC] 818ms, all delay time 1364ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=9}, DataSize=1
+
+2022-07-05 16:03:12,094 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=11}
+
+2022-07-05 16:03:13,353 INFO [PUSH-SUCC] 599ms, all delay time 1259ms, SLA 1427ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=11}, DataSize=2, target=192.168.64.1
+
+2022-07-05 16:03:13,363 INFO [PUSH-SUCC] 617ms, all delay time 1269ms, SLA 1437ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=11}, DataSize=2, target=192.168.64.1
+
+2022-07-05 16:03:26,440 INFO [PUSH-SUCC] 18ms, all delay time 615ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=0}, DataSize=0
+
+2022-07-05 16:03:27,631 INFO [PUSH-SUCC] 10ms, all delay time 524ms, SLA 524ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=1}, DataSize=1, target=192.168.64.1
+
+2022-07-05 16:03:36,018 INFO [PUSH-SUCC] 24ms, all delay time 594ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='SPRING-CLOUD-ALIBABA-NACOS-PROVIDER-SERVICE', ephemeral=true, revision=0}, DataSize=0
+
+2022-07-05 16:04:33,745 INFO [PUSH-SUCC] 26ms, all delay time 555ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=2}, DataSize=0
+
+2022-07-05 16:04:35,044 INFO [PUSH-SUCC] 15ms, all delay time 548ms, SLA 548ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=3}, DataSize=1, target=192.168.64.1
+
+2022-07-05 16:04:44,319 INFO [PUSH-SUCC] 4ms, all delay time 567ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='SPRING-CLOUD-ALIBABA-NACOS-PROVIDER-SERVICE', ephemeral=true, revision=0}, DataSize=0
+
+2022-07-05 16:09:31,294 INFO [PUSH-SUCC] 21ms, all delay time 543ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=4}, DataSize=0
+
+2022-07-05 16:09:32,583 INFO [PUSH-SUCC] 14ms, all delay time 574ms, SLA 574ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=5}, DataSize=1, target=192.168.64.1
+
+2022-07-05 16:09:42,012 INFO [PUSH-SUCC] 4ms, all delay time 553ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=11}, DataSize=2
+
+2022-07-05 16:12:56,341 INFO [PUSH-SUCC] 22ms, all delay time 595ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=6}, DataSize=0
+
+2022-07-05 16:12:57,629 INFO [PUSH-SUCC] 14ms, all delay time 599ms, SLA 599ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=7}, DataSize=1, target=192.168.64.1
+
+2022-07-05 16:13:07,454 INFO [PUSH-SUCC] 3ms, all delay time 549ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='localhost', ephemeral=true, revision=0}, DataSize=0
+
+2022-07-05 16:14:28,806 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=13}
+
+2022-07-05 16:15:01,466 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=14}
+
+2022-07-05 16:15:02,026 INFO [PUSH-SUCC] 30ms, all delay time 609ms, SLA 560ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=14}, DataSize=1, target=192.168.64.1
+
+2022-07-05 16:15:22,102 INFO [PUSH-SUCC] 22ms, all delay time 615ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=8}, DataSize=0
+
+2022-07-05 16:15:23,290 INFO [PUSH-SUCC] 16ms, all delay time 551ms, SLA 551ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=9}, DataSize=1, target=192.168.64.1
+
+2022-07-05 16:15:39,526 INFO [PUSH-SUCC] 4ms, all delay time 596ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='localhost', ephemeral=true, revision=0}, DataSize=0
+
+2022-07-05 16:16:12,779 ERROR [PUSH-FAIL] 68ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=10}, reason=Stream is already completed, no further calls are allowed, target=192.168.64.1
+
+2022-07-05 16:16:12,779 ERROR Reason detail: 
+
+java.lang.IllegalStateException: Stream is already completed, no further calls are allowed
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:508)
+	at io.grpc.stub.ServerCalls$ServerCallStreamObserverImpl.onNext(ServerCalls.java:346)
+	at com.alibaba.nacos.core.remote.grpc.GrpcConnection.sendRequestNoAck(GrpcConnection.java:62)
+	at com.alibaba.nacos.core.remote.grpc.GrpcConnection.sendRequestInner(GrpcConnection.java:94)
+	at com.alibaba.nacos.core.remote.grpc.GrpcConnection.asyncRequest(GrpcConnection.java:117)
+	at com.alibaba.nacos.core.remote.RpcPushService.pushWithCallback(RpcPushService.java:55)
+	at com.alibaba.nacos.naming.push.v2.executor.PushExecutorRpcImpl.doPushWithCallback(PushExecutorRpcImpl.java:49)
+	at com.alibaba.nacos.naming.push.v2.executor.PushExecutorDelegate.doPushWithCallback(PushExecutorDelegate.java:52)
+	at com.alibaba.nacos.naming.push.v2.task.PushExecuteTask.run(PushExecuteTask.java:66)
+	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:116)
+2022-07-05 16:16:17,724 ERROR [PUSH-FAIL] 5013ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=10}, reason=Timeout After 5000 milliseconds,requestId =40, target=192.168.64.1
+
+2022-07-05 16:16:17,725 ERROR Reason detail: 
+
+java.util.concurrent.TimeoutException: Timeout After 5000 milliseconds,requestId =40
+	at com.alibaba.nacos.api.remote.DefaultRequestFuture$TimeoutHandler.run(DefaultRequestFuture.java:194)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-07-05 16:16:30,731 INFO [PUSH-SUCC] 19ms, all delay time 589ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=10}, DataSize=0
+
+2022-07-05 16:16:32,028 INFO [PUSH-SUCC] 12ms, all delay time 621ms, SLA 621ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=11}, DataSize=1, target=192.168.64.1
+
+2022-07-05 16:18:15,245 INFO [PUSH-SUCC] 24ms, all delay time 598ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=12}, DataSize=0
+
+2022-07-05 16:18:16,668 INFO [PUSH-SUCC] 36ms, all delay time 615ms, SLA 615ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=13}, DataSize=1, target=192.168.64.1
+
+2022-07-05 16:19:18,511 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=15}
+
+2022-07-05 16:19:19,054 INFO [PUSH-SUCC] 7ms, all delay time 593ms, SLA 543ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=15}, DataSize=2, target=192.168.64.1
+
+2022-07-05 16:19:19,068 INFO [PUSH-SUCC] 21ms, all delay time 607ms, SLA 557ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=15}, DataSize=2, target=192.168.64.1
+
+2022-07-05 16:19:26,837 INFO [PUSH-SUCC] 22ms, all delay time 588ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=14}, DataSize=0
+
+2022-07-05 16:19:28,030 INFO [PUSH-SUCC] 10ms, all delay time 521ms, SLA 521ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=15}, DataSize=1, target=192.168.64.1
+
+2022-07-05 16:20:43,140 INFO [PUSH-SUCC] 20ms, all delay time 559ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=16}, DataSize=0
+
+2022-07-05 16:20:44,439 INFO [PUSH-SUCC] 15ms, all delay time 578ms, SLA 578ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=17}, DataSize=1, target=192.168.64.1
+
+2022-07-05 16:22:01,160 INFO [PUSH-SUCC] 21ms, all delay time 556ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=18}, DataSize=0
+
+2022-07-05 16:22:02,451 INFO [PUSH-SUCC] 9ms, all delay time 525ms, SLA 525ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=19}, DataSize=1, target=192.168.64.1
+
+2022-07-05 16:26:19,981 INFO [PUSH-SUCC] 22ms, all delay time 528ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=20}, DataSize=0
+
+2022-07-05 16:26:21,279 INFO [PUSH-SUCC] 13ms, all delay time 547ms, SLA 547ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=21}, DataSize=1, target=192.168.64.1
+
+2022-07-05 16:26:24,979 INFO [PUSH-SUCC] 7ms, all delay time 602ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='SPRING-CLOUD-ALIBABA-NACOS-PROVIDER-SERVICE', ephemeral=true, revision=0}, DataSize=0
+
+2022-07-05 16:27:02,946 INFO [PUSH-SUCC] 21ms, all delay time 562ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=22}, DataSize=0
+
+2022-07-05 16:27:04,243 INFO [PUSH-SUCC] 11ms, all delay time 555ms, SLA 555ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=23}, DataSize=1, target=192.168.64.1
+
+2022-07-05 16:27:25,684 INFO [PUSH-SUCC] 5ms, all delay time 561ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=15}, DataSize=2
+
+2022-07-05 16:30:37,286 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=17}
+
+2022-07-05 17:03:54,968 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=1}
+
+2022-07-05 17:03:55,453 INFO [PUSH-SUCC] 31ms, all delay time 551ms, SLA 485ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=1}, DataSize=1, target=192.168.64.1
+
+2022-07-05 17:04:03,459 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=2}
+
+2022-07-05 17:04:03,959 INFO [PUSH-SUCC] 6ms, all delay time 572ms, SLA 500ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=2}, DataSize=2, target=192.168.64.1
+
+2022-07-05 17:04:03,980 INFO [PUSH-SUCC] 28ms, all delay time 593ms, SLA 521ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=2}, DataSize=2, target=192.168.64.1
+
+2022-07-05 17:04:10,173 INFO [PUSH-SUCC] 24ms, all delay time 619ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=0}, DataSize=0
+
+2022-07-05 17:04:11,458 INFO [PUSH-SUCC] 14ms, all delay time 600ms, SLA 600ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=1}, DataSize=1, target=192.168.64.1
+
+2022-07-05 17:04:31,783 INFO [PUSH-SUCC] 7ms, all delay time 574ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='SPRING-CLOUD-ALIBABA-NACOS-PROVIDER-SERVICE', ephemeral=true, revision=0}, DataSize=0
+
+2022-07-05 17:26:57,589 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-provider-service', ephemeral=true, revision=4}
+
+2022-07-05 17:27:50,148 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=1}
+
+2022-07-05 17:27:50,655 INFO [PUSH-SUCC] 28ms, all delay time 557ms, SLA 507ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=1}, DataSize=1, target=192.168.64.1
+
+2022-07-05 17:27:51,935 INFO [PUSH-SUCC] 6ms, all delay time 553ms, SLA 553ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=2}, DataSize=0, target=192.168.64.1
+
+2022-07-05 17:28:48,825 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=3}
+
+2022-07-05 17:28:49,435 INFO [PUSH-SUCC] 145ms, all delay time 664ms, SLA 610ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=3}, DataSize=1, target=192.168.64.1
+
+2022-07-05 17:28:50,599 INFO [PUSH-SUCC] 8ms, all delay time 528ms, SLA 528ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=4}, DataSize=0, target=192.168.64.1
+
+2022-07-05 17:31:33,015 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=1}
+
+2022-07-05 17:31:33,507 INFO [PUSH-SUCC] 28ms, all delay time 547ms, SLA 492ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=1}, DataSize=1, target=192.168.64.1
+
+2022-07-05 17:31:34,791 INFO [PUSH-SUCC] 5ms, all delay time 541ms, SLA 541ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=2}, DataSize=0, target=192.168.64.1
+
+2022-07-05 17:33:18,574 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=1}
+
+2022-07-05 17:33:19,134 INFO [PUSH-SUCC] 27ms, all delay time 612ms, SLA 560ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=1}, DataSize=1, target=192.168.64.1
+
+2022-07-05 17:33:20,417 INFO [PUSH-SUCC] 8ms, all delay time 602ms, SLA 602ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=2}, DataSize=0, target=192.168.64.1
+
+2022-07-05 17:34:16,146 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=3}
+
+2022-07-05 17:34:16,617 INFO [PUSH-SUCC] 27ms, all delay time 539ms, SLA 471ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=3}, DataSize=1, target=192.168.64.1
+
+2022-07-05 17:34:18,004 INFO [PUSH-SUCC] 6ms, all delay time 583ms, SLA 583ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=4}, DataSize=0, target=192.168.64.1
+
+2022-07-05 17:36:12,915 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=1}
+
+2022-07-05 17:36:13,484 INFO [PUSH-SUCC] 27ms, all delay time 633ms, SLA 569ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=1}, DataSize=1, target=192.168.64.1
+
+2022-07-05 17:37:06,629 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=3}
+
+2022-07-05 17:37:07,099 INFO [PUSH-SUCC] 26ms, all delay time 531ms, SLA 470ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=3}, DataSize=1, target=192.168.64.1
+
+2022-07-05 17:37:08,490 INFO [PUSH-SUCC] 6ms, all delay time 613ms, SLA 613ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=4}, DataSize=0, target=192.168.64.1
+
+2022-07-05 17:38:44,929 INFO [PUSH-SUCC] 26ms, all delay time 576ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=0}, DataSize=0
+
+2022-07-05 17:38:46,227 INFO [PUSH-SUCC] 14ms, all delay time 599ms, SLA 599ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=1}, DataSize=1, target=192.168.64.1
+
+2022-07-05 17:39:19,113 INFO [PUSH-SUCC] 21ms, all delay time 624ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=2}, DataSize=0
+
+2022-07-05 17:39:20,307 INFO [PUSH-SUCC] 17ms, all delay time 517ms, SLA 517ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=3}, DataSize=1, target=192.168.64.1
+
+2022-07-05 17:43:17,712 INFO [PUSH-SUCC] 26ms, all delay time 622ms for subscriber 192.168.64.1, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=4}, DataSize=0
+
+2022-07-05 17:43:18,893 INFO [PUSH-SUCC] 11ms, all delay time 517ms, SLA 517ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-consumer-service', ephemeral=true, revision=5}, DataSize=1, target=192.168.64.1
+
+2022-07-05 17:44:14,111 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=1}
+
+2022-07-05 17:44:14,644 INFO [PUSH-SUCC] 29ms, all delay time 609ms, SLA 533ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=1}, DataSize=1, target=192.168.64.1
+
+2022-07-05 17:45:32,482 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=3}
+
+2022-07-05 17:45:32,972 INFO [PUSH-SUCC] 29ms, all delay time 573ms, SLA 490ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=3}, DataSize=1, target=192.168.64.1
+
+2022-07-05 17:45:34,256 INFO [PUSH-SUCC] 5ms, all delay time 537ms, SLA 537ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=4}, DataSize=0, target=192.168.64.1
+
+2022-07-05 17:46:31,604 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=5}
+
+2022-07-05 17:46:32,158 INFO [PUSH-SUCC] 30ms, all delay time 615ms, SLA 554ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=5}, DataSize=1, target=192.168.64.1
+
+2022-07-05 17:49:45,297 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=1}
+
+2022-07-05 17:49:46,164 INFO [PUSH-SUCC] 308ms, all delay time 883ms, SLA 884ms, Service{namespace='public', group='DEFAULT_GROUP', name='spring-cloud-alibaba-nacos-config-client-service', ephemeral=true, revision=1}, DataSize=1, target=192.168.64.1
+

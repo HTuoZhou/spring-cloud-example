@@ -1,0 +1,16 @@
+2022-07-05 14:53:35,865 INFO Current addressing mode selection : StandaloneMemberLookup
+
+2022-07-05 14:53:35,866 WARN [serverlist] updated to : [Member{ip='192.168.64.1', port=8848, state=UP, extendInfo={raftPort=7848, version=2.0.3}}]
+
+2022-07-05 14:53:37,826 WARN [ClusterRpcClientProxy] success to refresh cluster rpc client on start up,members =[] 
+
+2022-07-05 14:53:43,216 INFO This node is ready to provide external services
+
+2022-07-05 17:49:36,942 INFO Current addressing mode selection : StandaloneMemberLookup
+
+2022-07-05 17:49:36,943 WARN [serverlist] updated to : [Member{ip='192.168.64.1', port=8848, state=UP, extendInfo={raftPort=7848, version=2.0.3}}]
+
+2022-07-05 17:49:38,775 WARN [ClusterRpcClientProxy] success to refresh cluster rpc client on start up,members =[] 
+
+2022-07-05 17:49:44,266 INFO This node is ready to provide external services
+

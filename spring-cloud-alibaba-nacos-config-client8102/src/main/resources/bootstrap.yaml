@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    nacos:
+      discovery: #nacos注册中心配置
+        server-addr: localhost:8848
+        group: DEFAULT_GROUP
+        namespace: public
+        username: nacos
+        password: nacos
+      config: #nacos配置中心配置
+        file-extension: yaml
