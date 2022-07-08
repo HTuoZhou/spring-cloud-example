@@ -33,10 +33,10 @@
         <module>spring-cloud-stream-provider8096</module>
         <module>spring-cloud-stream-consumer8097</module>
         <module>spring-cloud-stream-consumer8098</module>
-        <module>spring-cloud-alibaba-nacos-provider8099</module>
-        <module>spring-cloud-alibaba-nacos-provider8100</module>
-        <module>spring-cloud-alibaba-nacos-consumer8101</module>
-        <module>spring-cloud-alibaba-nacos-config-client8102</module>
+        <module>spring-cloud-alibaba-provider8099</module>
+        <module>spring-cloud-alibaba-provider8100</module>
+        <module>spring-cloud-alibaba-consumer8101</module>
+        <module>spring-cloud-alibaba-config-client8102</module>
     </modules>
 
     <groupId>com.ywstz.cloud</groupId>

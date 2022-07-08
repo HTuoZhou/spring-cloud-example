@@ -1,0 +1,8 @@
+2022-07-05 17:31:12,359 INFO [dump-task] add task. groupKey=spring-cloud-alibaba-nacos-config-client-service-dev.yaml+DEFAULT_GROUP, taskKey=spring-cloud-alibaba-nacos-config-client-service-dev.yaml+DEFAULT_GROUP++false+null
+
+2022-07-05 17:44:56,815 INFO [dump-task] add task. groupKey=spring-cloud-alibaba-nacos-config-client-service-dev.yaml+DEFAULT_GROUP, taskKey=spring-cloud-alibaba-nacos-config-client-service-dev.yaml+DEFAULT_GROUP++false+null
+
+2022-07-05 17:47:09,588 INFO [dump-task] add task. groupKey=spring-cloud-alibaba-nacos-config-client-service-dev.yaml+DEFAULT_GROUP, taskKey=spring-cloud-alibaba-nacos-config-client-service-dev.yaml+DEFAULT_GROUP++false+null
+
+2022-07-05 17:49:38,730 INFO [dump-all-ok] spring-cloud-alibaba-nacos-config-client-service-dev.yaml+DEFAULT_GROUP, 1657014429585, length=85, md5=b236b7476c8fa399539c67414cc55e1c
+

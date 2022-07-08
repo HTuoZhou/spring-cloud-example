@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-cloud-alibaba-config-client-service #应用名称
+  profiles:
+    active: dev #开发环境
+    #active: test #测试环境
+    #active: pro #生产环境
+
+server:
+  servlet:
+    context-path: /spring-cloud-alibaba-config-client #项目访问根路径

@@ -1,0 +1,24 @@
+2022-07-05 18:08:04,889 WARN Unable to fsync directory D:\JavaWorkSpace\spring-cloud-example\nacos-server-2.0.3\nacos\data\protocol\raft\naming_instance_metadata\snapshot\temp on windows.
+
+2022-07-05 18:08:04,889 INFO Deleting snapshot D:\JavaWorkSpace\spring-cloud-example\nacos-server-2.0.3\nacos\data\protocol\raft\naming_instance_metadata\snapshot\snapshot_5.
+
+2022-07-05 18:08:04,889 INFO Renaming D:\JavaWorkSpace\spring-cloud-example\nacos-server-2.0.3\nacos\data\protocol\raft\naming_instance_metadata\snapshot\temp to D:\JavaWorkSpace\spring-cloud-example\nacos-server-2.0.3\nacos\data\protocol\raft\naming_instance_metadata\snapshot\snapshot_5.
+
+2022-07-05 18:08:04,890 INFO Deleting snapshot D:\JavaWorkSpace\spring-cloud-example\nacos-server-2.0.3\nacos\data\protocol\raft\naming_instance_metadata\snapshot\snapshot_4.
+
+2022-07-05 18:14:07,744 WARN Unable to fsync directory D:\JavaWorkSpace\spring-cloud-example\nacos-server-2.0.3\nacos\data\protocol\raft\naming_service_metadata\snapshot\temp on windows.
+
+2022-07-05 18:14:07,744 INFO Deleting snapshot D:\JavaWorkSpace\spring-cloud-example\nacos-server-2.0.3\nacos\data\protocol\raft\naming_service_metadata\snapshot\snapshot_2.
+
+2022-07-05 18:14:07,744 INFO Renaming D:\JavaWorkSpace\spring-cloud-example\nacos-server-2.0.3\nacos\data\protocol\raft\naming_service_metadata\snapshot\temp to D:\JavaWorkSpace\spring-cloud-example\nacos-server-2.0.3\nacos\data\protocol\raft\naming_service_metadata\snapshot\snapshot_2.
+
+2022-07-05 18:14:07,744 INFO Deleting snapshot D:\JavaWorkSpace\spring-cloud-example\nacos-server-2.0.3\nacos\data\protocol\raft\naming_service_metadata\snapshot\snapshot_1.
+
+2022-07-05 18:16:55,958 WARN Unable to fsync directory D:\JavaWorkSpace\spring-cloud-example\nacos-server-2.0.3\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot\temp on windows.
+
+2022-07-05 18:16:55,958 INFO Deleting snapshot D:\JavaWorkSpace\spring-cloud-example\nacos-server-2.0.3\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot\snapshot_2.
+
+2022-07-05 18:16:55,958 INFO Renaming D:\JavaWorkSpace\spring-cloud-example\nacos-server-2.0.3\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot\temp to D:\JavaWorkSpace\spring-cloud-example\nacos-server-2.0.3\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot\snapshot_2.
+
+2022-07-05 18:16:55,958 INFO Deleting snapshot D:\JavaWorkSpace\spring-cloud-example\nacos-server-2.0.3\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot\snapshot_1.
+
